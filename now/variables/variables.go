@@ -2,20 +2,21 @@ package main
 
 import "fmt"
 
+const pi float64 = 3.14
+
 func main() {
 
-	firstNumber := 10
-	secondNumber := 3.53
+	var radius float64
 
-	ans1 := firstNumber * int(secondNumber)
-	fmt.Println(ans1)
-	ans2 := float64(firstNumber) * secondNumber
-	fmt.Println(ans2)
+	fmt.Print("Input the radius : ")
+	_, err := fmt.Scan(&radius)
 
-	ans3 := firstNumber / int(secondNumber)
-	fmt.Println(ans3)
+	if err != nil {
+		fmt.Print("Invalid radius")
+		return
+	}
 
-	ans4 := float64(firstNumber) / secondNumber
-	fmt.Println(ans4)
+	area := pi * radius * radius
+	fmt.Printf("Area is %.2f", area)
 
 }
