@@ -5,18 +5,17 @@ import "fmt"
 func main() {
 
 	firstNumber := 10
-	secondNumber := 3.5
+	secondNumber := 3.53
 
-	sum1 := firstNumber + int(secondNumber)
-	fmt.Println(sum1)
+	ans1 := firstNumber * int(secondNumber)
+	fmt.Println(ans1)
+	ans2 := float64(firstNumber) * secondNumber
+	fmt.Println(ans2)
 
-	sum2 := float64(firstNumber) + secondNumber
-	fmt.Println(sum2)
+	ans3 := firstNumber / int(secondNumber)
+	fmt.Println(ans3)
 
-	test := 10.4
-	fmt.Println(test)
-
-	test = 10
-	fmt.Println(test)
+	ans4 := float64(firstNumber) / secondNumber
+	fmt.Println(ans4)
 
 }
